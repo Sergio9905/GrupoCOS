@@ -51,6 +51,8 @@ dotnet ef migrations add InitialCreate
 ```
 
 3. Aplicar Migraciones a la Base de Datos
+   
+   En esta parte hay que tener en cuenta que cuando se clona el proyecto hay una carpeta llamada Data, la cual aparece como no disponible, asi que hay que crearla y posteriormente si aplicar el siguiente comando:
 ```bash
 dotnet ef database update
 ```
