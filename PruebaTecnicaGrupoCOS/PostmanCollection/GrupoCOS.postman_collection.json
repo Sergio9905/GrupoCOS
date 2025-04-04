@@ -1,0 +1,2010 @@
+{
+	"info": {
+		"_postman_id": "8a4d8436-8d25-4b24-bc77-91305a4a1d54",
+		"name": "GrupoCOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11567615"
+	},
+	"item": [
+		{
+			"name": "UserAccount",
+			"item": [
+				{
+					"name": "GetUserAccounts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/UserAccounts/get-user-accounts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UserAccounts",
+								"get-user-accounts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200-GetUserAccounts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/UserAccounts/get-user-accounts",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"UserAccounts",
+										"get-user-accounts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:06:15 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 3,\n        \"name\": \"Sergio Espejo\",\n        \"email\": \"sergio@gmail.com\",\n        \"userName\": \"Sergiooo\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Sergio Espejo\",\n        \"email\": \"sergio@gmail.com\",\n        \"userName\": \"Sergiooo\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Sebastian Espejo\",\n        \"email\": \"sebastian@gmail.com\",\n        \"userName\": \"SebastianEspejo\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Alvaro Espejo\",\n        \"email\": \"allvaro@gmail.com\",\n        \"userName\": \"AlvaroEspejo\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Andres Espejo\",\n        \"email\": \"andres@gmail.com\",\n        \"userName\": \"AndresEspejo\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GetUserAccountById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/UserAccounts/get-user-account-by-id/200",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UserAccounts",
+								"get-user-account-by-id",
+								"200"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200-GetUserAccountById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/UserAccounts/get-user-account-by-id/200",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"UserAccounts",
+										"get-user-account-by-id",
+										"200"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:06:45 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 3,\n    \"name\": \"Sergio Espejo\",\n    \"email\": \"sergio@gmail.com\",\n    \"userName\": \"Sergiooo\"\n}"
+						},
+						{
+							"name": "404-GetUserAccountById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/UserAccounts/get-user-account-by-id/200",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"UserAccounts",
+										"get-user-account-by-id",
+										"200"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:08:18 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "User not found"
+						}
+					]
+				},
+				{
+					"name": "UpdateUserAccountById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 500,\r\n    \"Name\": \"Sergio Esteban Espejo Montealegre\",\r\n    \"Email\": \"SergioEsteban@gmail.com\",\r\n    \"Password\": \"SergioEsteban123\",\r\n    \"UserName\": \"SergioEsteban\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UserAccounts/update-user-account-by-id/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UserAccounts",
+								"update-user-account-by-id",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "204-UpdateUserAccountById",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Id\": 3,\r\n    \"Name\": \"Sergio Esteban Espejo Montealegre\",\r\n    \"Email\": \"SergioEsteban@gmail.com\",\r\n    \"Password\": \"SergioEsteban123\",\r\n    \"UserName\": \"SergioEsteban\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/UserAccounts/update-user-account-by-id/3",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"UserAccounts",
+										"update-user-account-by-id",
+										"3"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:10:24 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "400-UpdateUserAccountById",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Id\": 500,\r\n    \"Name\": \"Sergio Esteban Espejo Montealegre\",\r\n    \"Email\": \"SergioEsteban@gmail.com\",\r\n    \"Password\": \"SergioEsteban123\",\r\n    \"UserName\": \"SergioEsteban\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/UserAccounts/update-user-account-by-id/3",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"UserAccounts",
+										"update-user-account-by-id",
+										"3"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:11:19 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "ID mismatch"
+						}
+					]
+				},
+				{
+					"name": "CreateUserAccount",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Name\": \"Alejandro Peron\",\r\n    \"Email\": \"alejandro@gmail.com\",\r\n    \"Password\": \"Alejandro123\",\r\n    \"UserName\": \"AlejandroPeron\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/UserAccounts/create-user-account",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UserAccounts",
+								"create-user-account"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201-CreateUserAccount",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Name\": \"Alejandro Peron\",\r\n    \"Email\": \"alejandro@gmail.com\",\r\n    \"Password\": \"Alejandro123\",\r\n    \"UserName\": \"AlejandroPeron\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/UserAccounts/create-user-account",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"UserAccounts",
+										"create-user-account"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Location",
+									"value": "https://localhost:44363/api/UserAccounts/get-user-account-by-id/8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:12:19 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 8,\n    \"name\": \"Alejandro Peron\",\n    \"email\": \"alejandro@gmail.com\",\n    \"userName\": \"AlejandroPeron\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteUserAccountById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/UserAccounts/delete-user-account-by-id/200",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"UserAccounts",
+								"delete-user-account-by-id",
+								"200"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "204-DeleteUserById",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/UserAccounts/delete-user-account-by-id/7",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"UserAccounts",
+										"delete-user-account-by-id",
+										"7"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:13:12 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "404-DeleteUserById",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/UserAccounts/delete-user-account-by-id/200",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"UserAccounts",
+										"delete-user-account-by-id",
+										"200"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:13:34 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "User not found"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "GetPosts",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Posts/get-posts",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Posts",
+								"get-posts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200-GetPosts",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/Posts/get-posts",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Posts",
+										"get-posts"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:14:11 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"createdAt\": \"2025-04-04T06:43:01.2309403\",\n        \"updatedAt\": \"2025-04-04T06:43:01.2309406\",\n        \"author\": {\n            \"id\": 4,\n            \"name\": \"Sergio Espejo\",\n            \"email\": \"sergio@gmail.com\",\n            \"userName\": \"Sergiooo\"\n        },\n        \"id\": 1,\n        \"title\": \"Reunion familiar\",\n        \"description\": \"Reunion familiar el proximo sabado en casa de Sergio\",\n        \"userAccountId\": 4\n    },\n    {\n        \"createdAt\": \"2025-04-04T14:24:15.7517852\",\n        \"updatedAt\": \"2025-04-04T14:24:15.751786\",\n        \"author\": {\n            \"id\": 3,\n            \"name\": \"Sergio Esteban Espejo Montealegre\",\n            \"email\": \"SergioEsteban@gmail.com\",\n            \"userName\": \"SergioEsteban\"\n        },\n        \"id\": 2,\n        \"title\": \"Reunion familiar 2\",\n        \"description\": \"Reunion familiar el proximo sabado en casa de Sergio 2\",\n        \"userAccountId\": 3\n    },\n    {\n        \"createdAt\": \"2025-04-04T14:29:52.8769289\",\n        \"updatedAt\": \"2025-04-04T14:29:52.87693\",\n        \"author\": {\n            \"id\": 3,\n            \"name\": \"Sergio Esteban Espejo Montealegre\",\n            \"email\": \"SergioEsteban@gmail.com\",\n            \"userName\": \"SergioEsteban\"\n        },\n        \"id\": 3,\n        \"title\": \"Jugar Metroid Prime 4: Beyond en Switch 2 me ha enseñado dos cosas: el salto que darán los juegos en la nueva consola y dónde quiero jugarlo\",\n        \"description\": \"Cuando hace unos días volvieron a enseñarnos Metroid Prime 4: Beyond muchos creímos adivinar por qué razón Nintendo no había dado la fecha de lanzamiento del juego. Parecía evidente que, detrás de esa decisión, estaba la necesidad de esconder la fecha de Nintendo Switch 2. Ahora ya sabemos que no dimos ni una, pero al menos estamos en una posición muy distinta a la que vivimos tras ese mismo tráiler.\",\n        \"userAccountId\": 3\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GetPostById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Posts/get-post-by-id/200",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Posts",
+								"get-post-by-id",
+								"200"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200-GetPostById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/Posts/get-post-by-id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Posts",
+										"get-post-by-id",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:15:22 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"createdAt\": \"2025-04-04T06:43:01.2309403\",\n    \"updatedAt\": \"2025-04-04T06:43:01.2309406\",\n    \"author\": {\n        \"id\": 4,\n        \"name\": \"Sergio Espejo\",\n        \"email\": \"sergio@gmail.com\",\n        \"userName\": \"Sergiooo\"\n    },\n    \"id\": 1,\n    \"title\": \"Reunion familiar\",\n    \"description\": \"Reunion familiar el proximo sabado en casa de Sergio\",\n    \"userAccountId\": 4\n}"
+						},
+						{
+							"name": "404-GetPostById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/Posts/get-post-by-id/200",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Posts",
+										"get-post-by-id",
+										"200"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:15:49 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "Post not found"
+						}
+					]
+				},
+				{
+					"name": "UpdatePostById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Id\": 90,\r\n    \"Title\": \"Esto es una actualizacion de titulo\",\r\n    \"Description\": \"Esto es una actualizacion de descripcion\",\r\n    \"UserAccountId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Posts/update-post-by-id/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Posts",
+								"update-post-by-id",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "204-UpdatePostById",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Id\": 1,\r\n    \"Title\": \"Esto es una actualizacion de titulo\",\r\n    \"Description\": \"Esto es una actualizacion de descripcion\",\r\n    \"UserAccountId\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/Posts/update-post-by-id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Posts",
+										"update-post-by-id",
+										"1"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:19:06 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "400-UpdatePostById",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Id\": 90,\r\n    \"Title\": \"Esto es una actualizacion de titulo\",\r\n    \"Description\": \"Esto es una actualizacion de descripcion\",\r\n    \"UserAccountId\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/Posts/update-post-by-id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Posts",
+										"update-post-by-id",
+										"1"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:20:09 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "ID mismatch"
+						}
+					]
+				},
+				{
+					"name": "CreatePost",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Title\": \"Switch 2 es algo más potente que Steam Deck, aunque los gurús de Digital Foundry hablan de la consola de Nintendo sin pillarse los dedos\",\r\n    \"Description\": \"Lo hemos dicho muchas veces: esta es la semana de Nintendo Switch 2. Toda la información relacionada con la nueva consola japonesa está saliendo poco a poco a la luz, y cada vez más jugadores están descubriendo sus detalles internos. Eso sí, una cosa que Nintendo no ha hecho es revelar de forma clara y directa sus componentes internos, especialmente su procesador, memoria RAM y tarjeta gráfica. Sin embargo, algunos análisis preliminares en las primeras pruebas con la prensa apuntan a que, al menos sobre el papel, la competencia con Steam Deck da a Switch 2 una ligera ventaja.\",\r\n    \"UserAccountId\": 1000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Posts/create-post",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Posts",
+								"create-post"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201-CreatePost",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Title\": \"Switch 2 es algo más potente que Steam Deck, aunque los gurús de Digital Foundry hablan de la consola de Nintendo sin pillarse los dedos\",\r\n    \"Description\": \"Lo hemos dicho muchas veces: esta es la semana de Nintendo Switch 2. Toda la información relacionada con la nueva consola japonesa está saliendo poco a poco a la luz, y cada vez más jugadores están descubriendo sus detalles internos. Eso sí, una cosa que Nintendo no ha hecho es revelar de forma clara y directa sus componentes internos, especialmente su procesador, memoria RAM y tarjeta gráfica. Sin embargo, algunos análisis preliminares en las primeras pruebas con la prensa apuntan a que, al menos sobre el papel, la competencia con Steam Deck da a Switch 2 una ligera ventaja.\",\r\n    \"UserAccountId\": 3    \r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/Posts/create-post",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Posts",
+										"create-post"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Location",
+									"value": "https://localhost:44363/api/Posts/get-post-by-id/4"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:21:33 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"createdAt\": \"2025-04-04T17:21:33.9004797Z\",\n    \"updatedAt\": \"2025-04-04T17:21:33.9005953Z\",\n    \"author\": {\n        \"id\": 3,\n        \"name\": \"Sergio Esteban Espejo Montealegre\",\n        \"email\": \"SergioEsteban@gmail.com\",\n        \"userName\": \"SergioEsteban\"\n    },\n    \"id\": 4,\n    \"title\": \"Switch 2 es algo más potente que Steam Deck, aunque los gurús de Digital Foundry hablan de la consola de Nintendo sin pillarse los dedos\",\n    \"description\": \"Lo hemos dicho muchas veces: esta es la semana de Nintendo Switch 2. Toda la información relacionada con la nueva consola japonesa está saliendo poco a poco a la luz, y cada vez más jugadores están descubriendo sus detalles internos. Eso sí, una cosa que Nintendo no ha hecho es revelar de forma clara y directa sus componentes internos, especialmente su procesador, memoria RAM y tarjeta gráfica. Sin embargo, algunos análisis preliminares en las primeras pruebas con la prensa apuntan a que, al menos sobre el papel, la competencia con Steam Deck da a Switch 2 una ligera ventaja.\",\n    \"userAccountId\": 3\n}"
+						},
+						{
+							"name": "400-CreatePost",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Title\": \"Switch 2 es algo más potente que Steam Deck, aunque los gurús de Digital Foundry hablan de la consola de Nintendo sin pillarse los dedos\",\r\n    \"Description\": \"Lo hemos dicho muchas veces: esta es la semana de Nintendo Switch 2. Toda la información relacionada con la nueva consola japonesa está saliendo poco a poco a la luz, y cada vez más jugadores están descubriendo sus detalles internos. Eso sí, una cosa que Nintendo no ha hecho es revelar de forma clara y directa sus componentes internos, especialmente su procesador, memoria RAM y tarjeta gráfica. Sin embargo, algunos análisis preliminares en las primeras pruebas con la prensa apuntan a que, al menos sobre el papel, la competencia con Steam Deck da a Switch 2 una ligera ventaja.\",\r\n    \"UserAccountId\": 1000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/Posts/create-post",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Posts",
+										"create-post"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:21:55 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "User not found"
+						}
+					]
+				},
+				{
+					"name": "DeletePostById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Posts/delete-post-by-id/5000",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Posts",
+								"delete-post-by-id",
+								"5000"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "204-DeletePost",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/Posts/delete-post-by-id/2",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Posts",
+										"delete-post-by-id",
+										"2"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:22:31 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "404-DeletePost",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/Posts/delete-post-by-id/5000",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Posts",
+										"delete-post-by-id",
+										"5000"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:23:05 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "Post not found"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Comment",
+			"item": [
+				{
+					"name": "GetComments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Comments/get-comments",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Comments",
+								"get-comments"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200-GetComments",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/Comments/get-comments",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Comments",
+										"get-comments"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:26:51 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"createdAt\": \"2025-04-04T17:25:08.7924355\",\n        \"updatedAt\": \"2025-04-04T17:25:08.7924702\",\n        \"author\": {\n            \"id\": 3,\n            \"name\": \"Sergio Esteban Espejo Montealegre\",\n            \"email\": \"SergioEsteban@gmail.com\",\n            \"userName\": \"SergioEsteban\"\n        },\n        \"post\": {\n            \"createdAt\": \"2025-04-04T17:21:33.9004797\",\n            \"updatedAt\": \"2025-04-04T17:21:33.9005953\",\n            \"author\": {\n                \"id\": 3,\n                \"name\": \"Sergio Esteban Espejo Montealegre\",\n                \"email\": \"SergioEsteban@gmail.com\",\n                \"userName\": \"SergioEsteban\"\n            },\n            \"id\": 4,\n            \"title\": \"Switch 2 es algo más potente que Steam Deck, aunque los gurús de Digital Foundry hablan de la consola de Nintendo sin pillarse los dedos\",\n            \"description\": \"Lo hemos dicho muchas veces: esta es la semana de Nintendo Switch 2. Toda la información relacionada con la nueva consola japonesa está saliendo poco a poco a la luz, y cada vez más jugadores están descubriendo sus detalles internos. Eso sí, una cosa que Nintendo no ha hecho es revelar de forma clara y directa sus componentes internos, especialmente su procesador, memoria RAM y tarjeta gráfica. Sin embargo, algunos análisis preliminares en las primeras pruebas con la prensa apuntan a que, al menos sobre el papel, la competencia con Steam Deck da a Switch 2 una ligera ventaja.\",\n            \"userAccountId\": 3\n        },\n        \"id\": 1,\n        \"description\": \"La nueva switch se ve muy interesante\",\n        \"userAccountId\": 3,\n        \"postId\": 4\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "GetCommentById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Comments/get-comment-by-id/100",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Comments",
+								"get-comment-by-id",
+								"100"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "200-GetCommentById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/Comments/get-comment-by-id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Comments",
+										"get-comment-by-id",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:28:19 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"createdAt\": \"2025-04-04T17:25:08.7924355\",\n    \"updatedAt\": \"2025-04-04T17:25:08.7924702\",\n    \"author\": {\n        \"id\": 3,\n        \"name\": \"Sergio Esteban Espejo Montealegre\",\n        \"email\": \"SergioEsteban@gmail.com\",\n        \"userName\": \"SergioEsteban\"\n    },\n    \"post\": {\n        \"createdAt\": \"2025-04-04T17:21:33.9004797\",\n        \"updatedAt\": \"2025-04-04T17:21:33.9005953\",\n        \"author\": {\n            \"id\": 3,\n            \"name\": \"Sergio Esteban Espejo Montealegre\",\n            \"email\": \"SergioEsteban@gmail.com\",\n            \"userName\": \"SergioEsteban\"\n        },\n        \"id\": 4,\n        \"title\": \"Switch 2 es algo más potente que Steam Deck, aunque los gurús de Digital Foundry hablan de la consola de Nintendo sin pillarse los dedos\",\n        \"description\": \"Lo hemos dicho muchas veces: esta es la semana de Nintendo Switch 2. Toda la información relacionada con la nueva consola japonesa está saliendo poco a poco a la luz, y cada vez más jugadores están descubriendo sus detalles internos. Eso sí, una cosa que Nintendo no ha hecho es revelar de forma clara y directa sus componentes internos, especialmente su procesador, memoria RAM y tarjeta gráfica. Sin embargo, algunos análisis preliminares en las primeras pruebas con la prensa apuntan a que, al menos sobre el papel, la competencia con Steam Deck da a Switch 2 una ligera ventaja.\",\n        \"userAccountId\": 3\n    },\n    \"id\": 1,\n    \"description\": \"La nueva switch se ve muy interesante\",\n    \"userAccountId\": 3,\n    \"postId\": 4\n}"
+						},
+						{
+							"name": "404-GetCommentById",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/Comments/get-comment-by-id/100",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Comments",
+										"get-comment-by-id",
+										"100"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:28:47 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "Comment not found"
+						}
+					]
+				},
+				{
+					"name": "GetCommentsByPostId",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "200-GetCommentsByPostId",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/Comments/get-comments-by-post/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Comments",
+										"get-comments-by-post",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:32:21 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"createdAt\": \"2025-04-04T17:25:08.7924355\",\n        \"updatedAt\": \"2025-04-04T17:30:58.6435826\",\n        \"author\": {\n            \"id\": 3,\n            \"name\": \"Sergio Esteban Espejo Montealegre\",\n            \"email\": \"SergioEsteban@gmail.com\",\n            \"userName\": \"SergioEsteban\"\n        },\n        \"post\": {\n            \"createdAt\": \"2025-04-04T06:43:01.2309403\",\n            \"updatedAt\": \"2025-04-04T17:19:06.6631114\",\n            \"author\": {\n                \"id\": 3,\n                \"name\": \"Sergio Esteban Espejo Montealegre\",\n                \"email\": \"SergioEsteban@gmail.com\",\n                \"userName\": \"SergioEsteban\"\n            },\n            \"id\": 1,\n            \"title\": \"Esto es una actualizacion de titulo\",\n            \"description\": \"Esto es una actualizacion de descripcion\",\n            \"userAccountId\": 3\n        },\n        \"id\": 1,\n        \"description\": \"La nueva switch se ve muy mala\",\n        \"userAccountId\": 3,\n        \"postId\": 1\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "UpdateCommentById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Comments/update-comment-by-id/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Comments",
+								"update-comment-by-id",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "204-UpdateCommentById",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Id\": 1,\r\n    \"Description\": \"La nueva switch se ve muy mala\",\r\n    \"UserAccountId\": 3,\r\n    \"PostId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/Comments/update-comment-by-id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Comments",
+										"update-comment-by-id",
+										"1"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:30:58 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "400-UpdateCommentById",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Id\": 1,\r\n    \"Description\": \"La nueva switch se ve muy mala\",\r\n    \"UserAccountId\": 3,\r\n    \"PostId\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/Comments/update-comment-by-id/5",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Comments",
+										"update-comment-by-id",
+										"5"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:31:19 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "ID mismatch"
+						}
+					]
+				},
+				{
+					"name": "CreateComment",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Description\": \"La nueva switch se ve muy interesante\",\r\n    \"UserAccountId\": 3,\r\n    \"PostId\": 10000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Comments/create-comment",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Comments",
+								"create-comment"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "201-CreateComment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Description\": \"La nueva switch se ve muy interesante\",\r\n    \"UserAccountId\": 3,\r\n    \"PostId\": 4\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/Comments/create-comment",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Comments",
+										"create-comment"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Location",
+									"value": "https://localhost:44363/api/Comments/get-comment-by-id/1"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:25:08 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"createdAt\": \"2025-04-04T17:25:08.7924355Z\",\n    \"updatedAt\": \"2025-04-04T17:25:08.7924702Z\",\n    \"author\": {\n        \"id\": 3,\n        \"name\": \"Sergio Esteban Espejo Montealegre\",\n        \"email\": \"SergioEsteban@gmail.com\",\n        \"userName\": \"SergioEsteban\"\n    },\n    \"post\": {\n        \"createdAt\": \"2025-04-04T17:21:33.9004797\",\n        \"updatedAt\": \"2025-04-04T17:21:33.9005953\",\n        \"author\": {\n            \"id\": 3,\n            \"name\": \"Sergio Esteban Espejo Montealegre\",\n            \"email\": \"SergioEsteban@gmail.com\",\n            \"userName\": \"SergioEsteban\"\n        },\n        \"id\": 4,\n        \"title\": \"Switch 2 es algo más potente que Steam Deck, aunque los gurús de Digital Foundry hablan de la consola de Nintendo sin pillarse los dedos\",\n        \"description\": \"Lo hemos dicho muchas veces: esta es la semana de Nintendo Switch 2. Toda la información relacionada con la nueva consola japonesa está saliendo poco a poco a la luz, y cada vez más jugadores están descubriendo sus detalles internos. Eso sí, una cosa que Nintendo no ha hecho es revelar de forma clara y directa sus componentes internos, especialmente su procesador, memoria RAM y tarjeta gráfica. Sin embargo, algunos análisis preliminares en las primeras pruebas con la prensa apuntan a que, al menos sobre el papel, la competencia con Steam Deck da a Switch 2 una ligera ventaja.\",\n        \"userAccountId\": 3\n    },\n    \"id\": 1,\n    \"description\": \"La nueva switch se ve muy interesante\",\n    \"userAccountId\": 3,\n    \"postId\": 4\n}"
+						},
+						{
+							"name": "400-CreateComment",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"Description\": \"La nueva switch se ve muy interesante\",\r\n    \"UserAccountId\": 3,\r\n    \"PostId\": 10000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/Comments/create-comment",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Comments",
+										"create-comment"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:26:21 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "Post not found"
+						}
+					]
+				},
+				{
+					"name": "DeleteCommentById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/Comments/delete-comment-by-id/1",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Comments",
+								"delete-comment-by-id",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "204-DeleteCommentById",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/Comments/delete-comment-by-id/1",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Comments",
+										"delete-comment-by-id",
+										"1"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:33:37 GMT"
+								}
+							],
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "404-DeleteCommentById",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/Comments/delete-comment-by-id/100",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"Comments",
+										"delete-comment-by-id",
+										"100"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/plain; charset=utf-8"
+								},
+								{
+									"key": "Server",
+									"value": "Microsoft-IIS/10.0"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "ASP.NET"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 04 Apr 2025 17:34:00 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "Comment not found"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserName\": \"Sergio\",\r\n    \"Email\": \"{{email}}\",\r\n    \"Password\": \"{{password}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Auth/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Auth",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200-Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\": \"Sergiooo\",\r\n    \"Email\": \"{{email}}\",\r\n    \"Password\": \"{{password}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Auth",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Apr 2025 17:03:10 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzIiwiZW1haWwiOiJzZXJnaW9AZ21haWwuY29tIiwibmFtZSI6IlNlcmdpbyBFc3Blam8iLCJ1bmlxdWVfbmFtZSI6IlNlcmdpb29vIiwiZXhwIjoxNzUxNjQ4NTkwLCJpc3MiOiJodHRwOi8vbG9jYWxob3N0OjI1MDg3IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDoyNTA4NyJ9.RqYeqhQK9xcmiIqrfIARi-Z4B9KoymyUmnTx4aoLGek\",\n    \"refreshToken\": \"BVvfvEM284AmkJA7IyZOR2oxWuGrPFqVjqzJCQ7d+TQ=\"\n}"
+				},
+				{
+					"name": "401-Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\": \"Sergio\",\r\n    \"Email\": \"{{email}}\",\r\n    \"Password\": \"{{password}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/Auth/login",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"Auth",
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/10.0"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "ASP.NET"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 04 Apr 2025 17:04:09 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Invalid credentials.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "RefreshToken",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"RefreshToken\": \"{{refresh_token}}\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/Auth/refresh-token",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"Auth",
+						"refresh-token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "email",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "username",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "password",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "refresh_token",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
