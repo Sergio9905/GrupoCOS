@@ -39,9 +39,13 @@ dotnet restore ./PruebaTecnicaGrupoCOS.sln
 dotnet tool install --global dotnet-ef
 ```
 
-2. Crear una Nueva Migración
-Desde la raíz del proyecto (donde está el .csproj de Infrastructure):
+2. Cambiar al directiorio del proyecto
+```bash
+cd PruebaTecnicaGrupoCOS
+```
 
+3. Crear una Nueva Migración
+Desde la raíz del proyecto (donde está el .csproj de Infrastructure):
 ```bash
 dotnet ef migrations add InitialCreate
 ```
