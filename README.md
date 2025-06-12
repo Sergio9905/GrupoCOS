@@ -1,6 +1,5 @@
-# 🚀 Prueba Técnica para Grupo COS - API Backend
+# 🚀 Grupo COS - API Backend
 
-¡Gracias por la oportunidad de presentar esta prueba técnica para Grupo COS! 🙏  
 Este proyecto demuestra una API RESTful desarrollada con .NET Core, Entity Framework y arquitectura limpia.
 
 ## 📋 Requisitos Previos
